@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yes mood</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="yes">
+            <h2>I L
+                <img src="heart.png" alt=" ">ve U T<img src="heart.png" alt=" "><img src="heart.png" alt=" "></h2>
+            <div style="text-align: center; margin-top: 50px;">
+                <h1>Thank You for Choosing Me as Your Partner!</h1>
+                <p>I am honored to be your partner and I look forward to working together.</p>
+                <p>Let's achieve great things together!</p>
+            </div><br><br>
+
+
+            <h1>*Question*</h1>
+            <form id="questionForm"><br>
+                <label for="question">why do you like me?</label><br><br>
+                <textarea id="question" name="question" rows="4" cols="50" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+
+            <script>
+                // You can add JavaScript code here to handle the form submission if needed.
+                document.getElementById("questionForm").addEventListener("submit", function(event) {
+                    event.preventDefault(); // Prevent the default form submission behavior.
+
+                    // Get the value entered in the textarea.
+                    const questionText = document.getElementById("question").value;
+
+                    // You can handle the data, such as sending it to a server or displaying it on the page.
+                    // For this example, let's simply show an alert with the question.
+                    alert("You asked: " + questionText);
+
+                    // Optionally, you can clear the textarea after submission.
+                    document.getElementById("question").value = "";
+                });
+            </script><br>
+
+
+            <h1>What do you want to change in me?</h1>
+            <form action="#" method="post">
+                <label for="change_input">Your suggestion:</label>
+                <input type="text" id="change_input" name="change" required>
+                <input type="submit" value="Submit">
+            </form>
+            <br><br>
+
+
+</body>
+</div>
+</div>
+</body>
+
+</html>

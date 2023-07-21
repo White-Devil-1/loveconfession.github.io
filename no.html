@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>No mood</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .answer {
+            display: none;
+            margin-bottom: 10px;
+        }
+        
+        .answer.visible {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="yes">
+            <h2>I am waitting for u untill alive</h2>
+            <img src="heart.png" alt=" "><img src="heart.png" alt=" "><img src="heart.png" alt=" ">
+
+            <h1>Reason</h1>
+
+            <form action="submit_feedback.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="Reason">Reason:</label>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+</body>
+
+</html>
+
+</div>
+</div>
+</body>
+
+</html>
